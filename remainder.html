@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="remainder.css">
+</head>
+<body>
+  <form class="reminder-form">
+    <h2>New Reminder</h2>
+    <div class="form-group">
+      <label for="date">Select a Date:</label>
+      <input type="date" id="date" name="date">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject">
+        <option value="subject1">Subject 1</option>
+        <option value="subject2">Subject 2</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="description">Add description:</label>
+      <textarea id="description" name="description"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="contactNo">Contact No:</label>
+      <input type="tel" id="contactNo" name="contactNo">
+    </div>
+    <div class="form-group">
+      <label for="smsNo">SMS No:</label>
+      <input type="tel" id="smsNo" name="smsNo">
+    </div>
+    <div class="form-group">
+      <label>Recur for next:</label>
+      <label><input type="checkbox" name="recur" value="7"> 7 Days</label>
+      <label><input type="checkbox" name="recur" value="5"> 5 Days</label>
+      <label><input type="checkbox" name="recur" value="3"> 3 Days</label>
+      <label><input type="checkbox" name="recur" value="2"> 2 Days</label>
+    </div>
+    <button type="submit">Set Reminder</button>
+  </form>
+</body>
+</html>
